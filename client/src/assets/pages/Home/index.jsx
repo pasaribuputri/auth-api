@@ -40,7 +40,7 @@ const Home = () => {
                         .then((response)=> response.json())
                         .then((res)=> {
                             alert(res.message);
-                            navigate("/auth")
+                            navigate("/")
                         })
                     }
                 }}>Logout</button>
@@ -49,7 +49,7 @@ const Home = () => {
         ) : (
           <div>
             <h1 className="text-3xl font-bold text-lime-950 mb-4">Welcome to Your Profile!</h1>
-            <p className='text-xl'>You need to <button onClick={()=> navigate("/auth")} className='font-bold text-lime-950'>LOGIN</button> to acces your profile.</p>
+            <p className='text-xl'>You need to <button onClick={()=> navigate("/")} className='font-bold text-lime-950'>LOGIN</button> to acces your profile.</p>
           </div>
         )}
       </div>

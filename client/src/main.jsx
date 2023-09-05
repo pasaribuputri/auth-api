@@ -9,7 +9,7 @@ import Home from './assets/pages/Home/index.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "/auth",
+    path: "/",
     element: <Login/>,
   },
   {
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     element: <App/>,
     children: [
       {
-        path: "/",
+        path: "/home",
         element: <Home/>
       }
     ]

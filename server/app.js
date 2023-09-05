@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors({ origin: "http://localhost:5173", credentials: true }))
 app.use(cookieParser())
 
-app.use("/api", authRouter)
+app.use("/api",authMiddleware, authRouter)
 app.use("/api",authMiddleware, profileRouter)
 
 app.listen(process.env.PORT, () => console.log(`Berjalan pada port ${process.env.PORT}`))

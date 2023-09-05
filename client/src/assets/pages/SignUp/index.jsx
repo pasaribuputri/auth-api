@@ -20,8 +20,8 @@ const SignUp = () => {
     })
     .then((response)=> response.json())
     .then((res)=> {
-      alert(res.message);
-      navigate("/auth")
+            alert(res.message)
+            navigate("/");
     }).catch((err)=>{
         console.log("Error: " ,err);
         alert("Terjadi kesalahan. Silakan coba lagi nanti.")
@@ -60,7 +60,7 @@ const SignUp = () => {
               </form>
                 <div className='flex justify-center mt-4'>
                   <p className='me-1'>Have an account?</p>
-                  <button type='button' className="text-lime-950" onClick={()=> navigate("/auth")}>Sign In</button>
+                  <button type='button' className="text-lime-950" onClick={()=> navigate("/")}>Sign In</button>
                 </div>
         </div>
     </div>

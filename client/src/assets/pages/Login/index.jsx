@@ -17,7 +17,7 @@ const Login = () => {
                 try{
                   const response = await fetch("http://localhost:3000/api/login",{
                     method: "POST",
-                    credentials: 'include',
+                    // credentials: 'include',
                     headers: {
                       "Content-Type": "application/json",
                     },
@@ -27,7 +27,7 @@ const Login = () => {
                     const data = await response.json();
                     alert(data.message)
                     setUserSignIn(data)
-                    navigate("/")
+                    navigate("/home")
                   }else{
                     const errorData = await response.json();
                     alert(errorData.message);
