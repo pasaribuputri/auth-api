@@ -20,6 +20,8 @@ Aplikasi ini dibangun menggunakan [Express.js](https://expressjs.com/) sebagai b
 3. Install dependensi untuk backend dan frontend
    
    cd server > pnpm add express pg nodemon jsonwebtoken cookie-parser cors bcryptjs
+
+   
    cd client > pnpm install
 
 ## Menjalankan Aplikasi
