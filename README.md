@@ -17,20 +17,18 @@ Aplikasi ini dibangun menggunakan [Express.js](https://expressjs.com/) sebagai b
    ``bash
    git clone https://github.com/pasaribuputri/auth-api.git
    ``
-   cd auth-api
 3. Install dependensi untuk backend dan frontend
-   cd server
-   pnpm add express pg nodemon jsonwebtoken cookie-parser cors bcryptjs
-   cd client
-   pnpm install
+   
+   cd server > pnpm add express pg nodemon jsonwebtoken cookie-parser cors bcryptjs
+   cd client > pnpm install
 
 ## Menjalankan Aplikasi
 1. Jalankan server backend
-   cd server
-   pnpm run dev
+   
+   cd server > pnpm run dev
 3. Jalankan client frontend
-   cd client
-   pnpm run dev
+   
+   cd client > pnpm run dev
 
 ## Menggunakan Aplikasi
 
